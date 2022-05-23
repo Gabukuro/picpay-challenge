@@ -7,6 +7,10 @@ CRUD de pagamentos.
 - Angular CLI (13.3.6)
 - Node (16.15.0)
 - Json-server (0.17.0)
+- Storybook (6.5.3)
+- Angular Material (13.3.7)
+- ngx-datatable (20.0.0)
+
 
 ## 📦 Instalando dependências
 
