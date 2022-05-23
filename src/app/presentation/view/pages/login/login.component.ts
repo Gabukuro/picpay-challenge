@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit {
 
   loginResponse(user: UserEntity): void {
     console.log(user);
-    if (user.token) {
+    if (user?.token) {
       this.authService.credentials = user;
       this.router.navigateByUrl('/');
     } else {

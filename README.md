@@ -32,10 +32,13 @@ $ npm run json-server
 $ npm run start 
 ```
 
+A aplicação irá rodar por padrão na porta ```4200``` e você poderá logar com as credenciais ```email: email@email.com senha: 123456```. 
+
 Caso queira visualizaro o storybook do projeto, basta rodar o comando:
 ```
 $ npm run storybook
 ```
+
 
 ## 🧪 Testando o projeto
 

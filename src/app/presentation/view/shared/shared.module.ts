@@ -24,6 +24,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { TranslateModule } from '@ngx-translate/core';
 import { FilterButtonComponent } from './components/filter-button/filter-button.component';
 import { FilterDialogComponent } from './dialogs/filter-dialog/filter-dialog.component';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
     declarations: [
@@ -70,6 +71,7 @@ import { FilterDialogComponent } from './dialogs/filter-dialog/filter-dialog.com
         NgxMatNativeDateModule,    
         MatSnackBarModule,
         TranslateModule,
+        MatMenuModule
     ],
     entryComponents: [
         AddPaymentComponent,

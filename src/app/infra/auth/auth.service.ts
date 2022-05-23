@@ -19,7 +19,7 @@ export class AuthService {
   }
 
   isAuthenticated(): boolean {
-    return !!this.credentials.token;
+    return !!this.credentials?.token;
   }
 
   get credentials(): UserEntity {
