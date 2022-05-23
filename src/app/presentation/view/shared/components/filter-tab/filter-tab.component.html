@@ -1,5 +1,8 @@
 <div class="filter-tab" [formGroup]="filterTabForm">
-    <app-filter-input class="filter-tab__input"></app-filter-input>
+    <div class="wrapper">
+        <app-filter-input class="filter-tab__input"></app-filter-input>
+        <app-filter-button class="filter-tab__button" (click)="openCustomFilters()"></app-filter-button>
+    </div>
     <app-paginator
         [totalCount]="totalCount"
         [pageSizeOptions]="[10, 50, 100]" 

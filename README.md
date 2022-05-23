@@ -1,27 +1,50 @@
 # PicpayChallenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+CRUD de pagamentos.
 
-## Development server
+## 🧱 Construído com
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Angular CLI (13.3.6)
+- Node (16.15.0)
+- Json-server (0.17.0)
 
-## Code scaffolding
+## 📦 Instalando dependências
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Instale as dependências do frontend:
+```
+$ cd picpay-challenge/
+$ npm i
+```
 
-## Build
+Caso ainda não tenha o json-server, você pode instalar com os seguintes comandos:
+```
+$ npm install -g json-server
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## ☕ Iniciando o projeto
 
-## Running unit tests
+Para iniciar o projeto basta rodar os comando:
+```
+// iniciar o servidor json
+$ npm run json-server 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+// iniciar o frontend
+$ npm run start 
+```
 
-## Running end-to-end tests
+Caso queira visualizaro o storybook do projeto, basta rodar o comando:
+```
+$ npm run storybook
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🧪 Testando o projeto
 
-## Further help
+Para rodar os teses unitários com karma basta rodar o comando:
+```
+$ npm run test
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## To-dos
+- logout 
+- tela de usuário
+- corrigir possíveis bugs do filtro customizado

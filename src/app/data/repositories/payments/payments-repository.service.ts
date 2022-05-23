@@ -14,8 +14,8 @@ export class PaymentsRepositoryService implements IPaymentsRepository {
     private http: HttpClient
   ) { }
 
-  getPayments(): Observable<PaymentEntity[]> {
-    return this.http.get<PaymentEntity[]>(`${environment.serverUrl}/payments`);
+  getPayments(filters?: string): Observable<PaymentEntity[]> {
+    return this.http.get<PaymentEntity[]>(`${environment.serverUrl}/payments?${filters}`);
   }
 
   createPayment(payment: PaymentEntity): Observable<PaymentEntity> {

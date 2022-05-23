@@ -22,6 +22,8 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { NotificationComponent } from './notification/notification.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { TranslateModule } from '@ngx-translate/core';
+import { FilterButtonComponent } from './components/filter-button/filter-button.component';
+import { FilterDialogComponent } from './dialogs/filter-dialog/filter-dialog.component';
 
 @NgModule({
     declarations: [
@@ -38,6 +40,8 @@ import { TranslateModule } from '@ngx-translate/core';
         AddPaymentComponent,
         DeletePaymentComponent,
         NotificationComponent,
+        FilterButtonComponent,
+        FilterDialogComponent,
     ],
     exports: [
         AvatarComponent,
@@ -50,6 +54,7 @@ import { TranslateModule } from '@ngx-translate/core';
         PaymentsTableComponent,
         PaginatorComponent,
         UserInfoComponent,
+        FilterButtonComponent,
     ],
     imports: [
         CommonModule,

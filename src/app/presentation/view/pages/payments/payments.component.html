@@ -8,7 +8,12 @@
     </div>
   </div>
 
-  <app-filter-tab (filterChanged)="filterChanged($event)" [totalCount]="payments.length"></app-filter-tab>
+  <app-filter-tab 
+    (filterChanged)="filterChanged($event)" 
+    (customFilterChanged)="applyCustomFilter($event)"
+    [totalCount]="payments.length"
+  ></app-filter-tab>
+
   <app-payments-table 
     [payments]="payments"
     [pageSize]="paginatorOptions.pageSize"

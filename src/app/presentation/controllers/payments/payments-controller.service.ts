@@ -12,8 +12,8 @@ export class PaymentsControllerService implements IPaymentsController {
     private paymentsRepository: IPaymentsRepository
   ) {}
 
-  getPayments(): Observable<PaymentEntity[]> {
-    return this.paymentsRepository.getPayments();
+  getPayments(filters?: string): Observable<PaymentEntity[]> {
+    return this.paymentsRepository.getPayments(filters);
   }
 
   createPayment(payment: PaymentEntity): Observable<PaymentEntity> {

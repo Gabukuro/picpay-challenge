@@ -38,6 +38,19 @@ export class PaymentsComponent implements OnInit {
     });
   }
 
+  applyCustomFilter(filters: []): void {
+    let queryString = '';
+
+    filters.forEach((filter: any) => {
+      if(filter.value) queryString += `${filter.column}=${filter.value}&`;
+    });
+    this.paymentsController.getPayments(queryString)
+    .subscribe((payments) => {
+      this.payments = payments;
+      this.unfilteredPayments = payments;
+    });
+  }
+
   openPaymentDialog(payment?: PaymentEntity | null): void {
     this.matDialog
       .open(AddPaymentComponent, {
