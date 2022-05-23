@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { TranslateModule } from '@ngx-translate/core';
 import { SharedModule } from '../../shared.module';
 import { AddPaymentComponent } from '../add-payment/add-payment.component';
 
@@ -11,7 +12,7 @@ describe('LaunchComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [LaunchComponent],
-      imports: [SharedModule],
+      imports: [SharedModule, TranslateModule.forRoot()],
     }).compileComponents();
   });
 
@@ -44,6 +45,6 @@ describe('LaunchComponent', () => {
     component.openDialog();
     fixture.detectChanges();
     const dialogHeader = document.querySelector('h3');
-    expect(dialogHeader?.textContent).toBe('Editar pagamento');
+    expect(dialogHeader?.textContent).toBe('TXT_EDITAR_PAGAMENTO');
   });
 });

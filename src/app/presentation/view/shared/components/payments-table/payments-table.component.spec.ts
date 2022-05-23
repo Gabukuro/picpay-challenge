@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { TranslateModule } from '@ngx-translate/core';
 import { SharedModule } from '../../shared.module';
 
 import { PaymentsTableComponent } from './payments-table.component';
@@ -9,7 +10,7 @@ describe('TableComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ SharedModule ]
+      imports: [ SharedModule, TranslateModule.forRoot() ],
     })
     .compileComponents();
   });

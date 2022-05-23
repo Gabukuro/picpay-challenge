@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatDialogRef } from '@angular/material/dialog';
+import { TranslateModule } from '@ngx-translate/core';
 import { SharedModule } from '../../shared.module';
 
 import { AddPaymentComponent } from './add-payment.component';
@@ -10,7 +11,7 @@ describe('AddPaymentComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SharedModule],
+      imports: [SharedModule, TranslateModule.forRoot()],
       providers: [{ provide: MatDialogRef, useValue: {} }],
     }).compileComponents();
   });

@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { TranslateModule } from '@ngx-translate/core';
 import { of } from 'rxjs';
 import { IPaymentsController } from 'src/app/domain/interfaces/controllers/ipayments-controller';
 import { SharedModule } from '../../shared/shared.module';
-
 import { PaymentsComponent } from './payments.component';
 
 describe('PaymentsComponent', () => {
@@ -14,7 +14,7 @@ describe('PaymentsComponent', () => {
 
     await TestBed.configureTestingModule({
       declarations: [ PaymentsComponent ],
-      imports: [ SharedModule ],
+      imports: [ SharedModule, TranslateModule.forRoot() ],
       providers: [
         { provide: IPaymentsController, useValue: controllerSpy },
       ]

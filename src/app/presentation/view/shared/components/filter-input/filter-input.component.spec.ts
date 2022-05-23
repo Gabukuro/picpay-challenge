@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { FormBuilder } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 import { SharedModule } from '../../shared.module';
 
 import { FilterInputComponent } from './filter-input.component';
@@ -11,7 +11,7 @@ describe('FilterInputComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ FilterInputComponent ],
-      imports: [ SharedModule ],
+      imports: [ SharedModule, TranslateModule.forRoot() ],
     })
     .compileComponents();
   });

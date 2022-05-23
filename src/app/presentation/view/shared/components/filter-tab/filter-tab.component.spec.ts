@@ -1,7 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { FormBuilder } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppMaterialModule } from 'src/app/app-material.module';
+import { TranslateModule } from '@ngx-translate/core';
 import { SharedModule } from '../../shared.module';
 
 import { FilterTabComponent } from './filter-tab.component';
@@ -13,7 +11,7 @@ describe('FilterTabComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ FilterTabComponent ],
-      imports: [ SharedModule ],
+      imports: [ SharedModule, TranslateModule.forRoot()],
     })
     .compileComponents();
   });

@@ -14,8 +14,7 @@ export class FilterDialogComponent implements OnInit {
     private dialogRef: MatDialogRef<FilterDialogComponent>,
     @Optional() @Inject(MAT_DIALOG_DATA) public data: any
   ) {
-    if (data.filters.length > 0) {
-      console.log('data', data);
+    if (data?.filters.length > 0) {
       this.filters = data.filters;
     }
   }
