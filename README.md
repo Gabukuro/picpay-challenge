@@ -48,6 +48,5 @@ $ npm run test
 ```
 
 ## To-dos
-- logout 
 - tela de usuário
 - corrigir possíveis bugs do filtro customizado
